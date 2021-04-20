@@ -2,6 +2,15 @@
  const addButton = document.querySelector(".inputField button");
  const todoList = document.querySelector(".todoList");
  const deleteAllButton = document.querySelector(".footer button");
+ const saveInput = document.getElementById("saveInput");
+
+
+
+
+saveValue.onclick=function(){
+    localStorage.setItem("New Todo", saveInput.value);
+}
+
 
  inputBox.onkeyup = ()=>{
      let userData = inputBox.value; 
